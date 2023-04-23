@@ -815,7 +815,7 @@ class FuturesOrder(object):
         :param stp_act: The stp_act of this FuturesOrder.  # noqa: E501
         :type: str
         """
-        allowed_values = ["co", "cn", "cb"]  # noqa: E501
+        allowed_values = ["co", "cn", "cb", "-"]  # noqa: E501
         if self.local_vars_configuration.client_side_validation and stp_act not in allowed_values:  # noqa: E501
             raise ValueError(
                 "Invalid value for `stp_act` ({0}), must be one of {1}".format(stp_act, allowed_values)  # noqa: E501
