@@ -336,6 +336,7 @@ class LedgerRecord(object):
             "PEND",
             "DMOVE",
             "SPLITPEND",
+            "TRACK"
         ]  # noqa: E501
         if self.local_vars_configuration.client_side_validation and status not in allowed_values:  # noqa: E501
             raise ValueError(
