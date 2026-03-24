@@ -35,7 +35,7 @@ class Position(object):
     openapi_types = {
         'user': 'int',
         'contract': 'str',
-        'size': 'int',
+        'size': 'str',
         'leverage': 'str',
         'risk_limit': 'str',
         'leverage_max': 'str',
