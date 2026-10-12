@@ -7,6 +7,7 @@ from config import RunConfig
 from futures import futures_demo
 from margin import margin_demo
 from spot import spot_demo
+from crossex import crossex_demo
 
 logging.basicConfig(format="%(asctime)s: %(message)s", level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -38,6 +39,8 @@ def main():
             margin_demo(run_config)
         elif t == 'futures':
             futures_demo(run_config)
+        elif t == 'crossex':
+            crossex_demo(run_config)
         else:
             logger.warning("ignore unknown test %s", t)
 

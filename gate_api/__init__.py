@@ -17,6 +17,7 @@ from __future__ import absolute_import
 __version__ = "4.42.0"
 
 # import apis into sdk package
+from gate_api.api.cross_ex_api import CrossExApi
 from gate_api.api.earn_uni_api import EarnUniApi
 from gate_api.api.margin_uni_api import MarginUniApi
 from gate_api.api.sub_account_api import SubAccountApi
@@ -40,6 +41,9 @@ from gate_api.exceptions import ApiKeyError
 from gate_api.exceptions import ApiException
 
 # import models into sdk package
+from gate_api.models.crossex_account_asset import CrossexAccountAsset
+from gate_api.models.crossex_account import CrossexAccount
+from gate_api.models.crossex_position import CrossexPosition
 from gate_api.models.account_balance import AccountBalance
 from gate_api.models.agency_commission import AgencyCommission
 from gate_api.models.agency_commission_history import AgencyCommissionHistory

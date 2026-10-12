@@ -14,6 +14,10 @@
 from __future__ import absolute_import
 
 # import models into model package
+
+from gate_api.models.crossex_account_asset import CrossexAccountAsset
+from gate_api.models.crossex_account import CrossexAccount
+from gate_api.models.crossex_position import CrossexPosition
 from gate_api.models.account_balance import AccountBalance
 from gate_api.models.agency_commission import AgencyCommission
 from gate_api.models.agency_commission_history import AgencyCommissionHistory
